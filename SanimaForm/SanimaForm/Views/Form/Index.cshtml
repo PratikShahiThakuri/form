@@ -1,0 +1,31 @@
+﻿@model  SanimaBank.Models.Form
+
+    @{
+    ViewBag.Title = "Index";
+}
+
+<form >
+    <div class="container">
+      
+            <h2>Sanima Bank</h2>
+        
+    </div>
+   
+    
+       @Html.Partial("~/Views/Form/PartialView/BasicDetails.cshtml")
+   
+
+
+        @Html.Partial("~/Views/Form/PartialView/_ReportingAsNRBDirectives.cshtml")
+
+
+    @Html.Partial("~/Views/Form/PartialView/_Legends.cshtml")
+    @Html.Partial("~/Views/Form/PartialView/_Proposal.cshtml")
+
+
+
+
+
+
+</form>
+
