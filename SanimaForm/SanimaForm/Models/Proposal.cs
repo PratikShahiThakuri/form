@@ -10,9 +10,16 @@ namespace SanimaBank.Models
     {
         [DataType(DataType.MultilineText)]
         public string Input { get; set; }
+        [Display(Name ="Country Of Visit")]
         public int CountryOfVisit { get; set; }
+        [Display(Name = "Name Of The College")]
+
         public string NameOfTheCollege { get; set; }
+        [Display(Name = "Name Of The University")]
+
         public string NameOfTheUniversity { get; set; }
+        [Display(Name = "Name Of Course")]
+
         public string NameOfTheCourse { get; set; }
     }
 }

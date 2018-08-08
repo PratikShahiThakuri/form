@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using System.ComponentModel.DataAnnotations;
 namespace SanimaBank.Enums
 {
     public enum Set
@@ -11,5 +11,12 @@ namespace SanimaBank.Enums
         Microfinance,
         Business,
         Corporate
+    }
+    public enum Status
+    {
+        NA,
+        [Display(Name ="To be obtained")]
+        ToBeObtained,
+        Obtained
     }
 }

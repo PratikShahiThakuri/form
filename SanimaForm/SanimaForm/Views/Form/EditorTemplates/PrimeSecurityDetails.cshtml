@@ -1,0 +1,129 @@
+﻿@model SanimaForm.Models.PrimeSecurityDetails
+
+
+    
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4> 4.1 Prime Security Details</h4>
+
+            </div>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <div class="panel-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.RegisteredMortgage, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EnumDropDownListFor(model => model.RegisteredMortgage,  new { @class = "form-control"  })
+                                @Html.ValidationMessageFor(model => model.RegisteredMortgage, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.InternalLoanDeed, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EnumDropDownListFor(model => model.InternalLoanDeed,  new { @class = "form-control"  })
+                                @Html.ValidationMessageFor(model => model.InternalLoanDeed, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+                  
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-md-8">
+                                    @Html.Label("Personal Guarrantee", new { @class = "control-label col-md-3",@style= "padding-left: 0px" })
+                                    @Html.Label("Name", new { @class = "control-label col-md-1" })
+                                    @Html.TextBox("NameInput","",new {@class="col-md-3 form-control"})
+                                    <button type="button" class="btn btn-success btn-sm col-md-2" style="margin-left: 1%">Add</button>
+
+                                </div>
+                              
+                                <div class="col-md-4">
+                                    @Html.DropDownList("Personal Guarrantee",EnumHelper.GetSelectList(typeof(SanimaBank.Enums.Status)),new { @class = "form-control" })
+
+                                    @Html.ValidationMessageFor(model => model.ValuationReport, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                      
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.ValuationReport, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EditorFor(model => model.ValuationReport, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.ValuationReport, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.PreliminaryValuationReport, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EnumDropDownListFor(model => model.PreliminaryValuationReport,  new { @class = "form-control"  })
+                                @Html.ValidationMessageFor(model => model.PreliminaryValuationReport, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.FinalValuationReport, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EnumDropDownListFor(model => model.FinalValuationReport,  new { @class = "form-control"  })
+                                @Html.ValidationMessageFor(model => model.FinalValuationReport, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.InternalDeed, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EnumDropDownListFor(model => model.InternalDeed,new { @class = "form-control"  })
+                                @Html.ValidationMessageFor(model => model.InternalDeed, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.CorporateGuarantee, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EnumDropDownListFor(model => model.CorporateGuarantee, new { @class = "form-control"  })
+                                @Html.ValidationMessageFor(model => model.CorporateGuarantee, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Others, htmlAttributes: new { @class = "control-label col-md-8" })
+                            <div class="col-md-4">
+                                @Html.EnumDropDownListFor(model => model.Others,new { @class = "form-control"  })
+                                @Html.ValidationMessageFor(model => model.Others, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+       
+      
+
+       
+    </div>

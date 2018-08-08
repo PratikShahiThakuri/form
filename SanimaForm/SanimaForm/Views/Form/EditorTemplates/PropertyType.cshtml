@@ -1,0 +1,69 @@
+﻿@model SanimaBank.Models.PropertyType
+
+    @Html.AntiForgeryToken()
+   
+    <div class="container">
+       <div class="panel panel-primary">
+           <div class="panel-heading">
+               <h4>Property Type (Please tick mark as appropriate)</h4>
+           </div>
+           @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+           <div class="panel-body">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-6">
+                           <div class="form-group">
+                               @Html.LabelFor(model => model.Land, htmlAttributes: new { @class = "control-label col-md-5" })
+                               <div class="col-md-7">
+                                   @Html.EditorFor(model => model.Land, new { htmlAttributes = new { @class = "form-control" } })
+                                   @Html.ValidationMessageFor(model => model.Land, "", new { @class = "text-danger" })
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xs-6">
+                           <div class="form-group">
+                               @Html.LabelFor(model => model.LandAndBuilding, htmlAttributes: new { @class = "control-label col-md-5" })
+                               <div class="col-md-7">
+                                   @Html.EditorFor(model => model.LandAndBuilding, new { htmlAttributes = new { @class = "form-control" } })
+                                   @Html.ValidationMessageFor(model => model.LandAndBuilding, "", new { @class = "text-danger" })
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-6">
+                           <div class="form-group">
+                               @Html.LabelFor(model => model.CashOrNearCash, htmlAttributes: new { @class = "control-label col-md-5" })
+                               <div class="col-md-7">
+                                   @Html.EditorFor(model => model.CashOrNearCash, new { htmlAttributes = new { @class = "form-control" } })
+                                   @Html.ValidationMessageFor(model => model.CashOrNearCash, "", new { @class = "text-danger" })
+                               </div>
+                           </div>                       </div>
+                       <div class="col-xs-6">
+                           <div class="form-group">
+                               @Html.LabelFor(model => model.Other, htmlAttributes: new { @class = "control-label col-md-5" })
+                               <div class="col-md-7">
+                                   @Html.EditorFor(model => model.Other, new { htmlAttributes = new { @class = "form-control" } })
+                                   @Html.ValidationMessageFor(model => model.Other, "", new { @class = "text-danger" })
+                               </div>
+                           </div>                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+       
+        
+
+        
+
+        
+
+       
+
+    </div>
+
+
+

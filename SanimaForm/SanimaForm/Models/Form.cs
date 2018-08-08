@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SanimaForm.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,8 @@ namespace SanimaBank.Models
         public virtual Legends Legend { get; set; }
 
         public virtual Proposal Proposals { get; set; }
+        public virtual PropertyType PropertyTypes { get; set; }
+        public virtual PrimeSecurityDetails PrimeSecurityDetail { get; set; }
 
 
     }
