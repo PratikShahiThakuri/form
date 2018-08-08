@@ -24,7 +24,11 @@
 
 
     </div>
-
+    <div class="tab">
+        
+        @Html.EditorFor(x=>x.CreditCheckList_Generals)
+        @Html.Partial("~/Views/Form/EditorTemplates/RegulatoryComplianceCheckList.cshtml")
+    </div>
 
 
 
@@ -37,6 +41,7 @@
         </div>
     </div>
     <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
         

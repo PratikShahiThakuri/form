@@ -16,7 +16,7 @@ namespace SanimaBank.Models
         public virtual Proposal Proposals { get; set; }
         public virtual PropertyType PropertyTypes { get; set; }
         public virtual PrimeSecurityDetails PrimeSecurityDetail { get; set; }
-
+        public virtual CreditCheckList_General CreditCheckList_Generals { get; set; }
 
     }
 }

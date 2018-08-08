@@ -246,3 +246,4 @@ C:\Pratik\form\SanimaForm\SanimaForm\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Pratik\form\SanimaForm\SanimaForm\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Pratik\form\SanimaForm\SanimaForm\obj\Debug\SanimaForm.dll
 C:\Pratik\form\SanimaForm\SanimaForm\obj\Debug\SanimaForm.pdb
+C:\Pratik\form\SanimaForm\SanimaForm\obj\Debug\SanimaForm.csprojResolveAssemblyReference.cache

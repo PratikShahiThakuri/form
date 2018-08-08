@@ -11,7 +11,7 @@ namespace SanimaBank.Models
         [DataType(DataType.MultilineText)]
         public string Input { get; set; }
         [Display(Name ="Country Of Visit")]
-        public int CountryOfVisit { get; set; }
+        public string CountryOfVisit { get; set; }
         [Display(Name = "Name Of The College")]
 
         public string NameOfTheCollege { get; set; }

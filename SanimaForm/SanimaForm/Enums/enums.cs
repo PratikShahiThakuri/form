@@ -19,4 +19,10 @@ namespace SanimaBank.Enums
         ToBeObtained,
         Obtained
     }
+    public enum Remarks
+    {
+        Yes,
+        No,
+        NA
+    }
 }

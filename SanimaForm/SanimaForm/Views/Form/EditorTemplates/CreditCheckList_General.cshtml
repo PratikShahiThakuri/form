@@ -1,0 +1,257 @@
+﻿@model SanimaForm.Models.CreditCheckList_General
+
+
+    
+    <div class="container">
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4> 15.1.Credit Checklist General (Please tick mark as appropriate)</h4>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+
+                        <tr align="center">
+                            <th rowspan="2" style="text-align:center"> S.No.</th>
+                            <th rowspan="2" style="text-align:center">Prudence and Diligence</th>
+
+                            <th colspan="3" style="text-align:center">Remarks</th>
+
+                        </tr>
+                        <tr>
+                            <th>Yes</th>
+                            <th>No</th>
+                            <th>NA</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>@Html.LabelFor(model => model.DulyFilledUpAndSignedOff, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.DulyFilledUpAndSignedOff, SanimaBank.Enums.Remarks.Yes, new { @class = "with-font" })
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.DulyFilledUpAndSignedOff, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.DulyFilledUpAndSignedOff, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>@Html.LabelFor(model => model.CopiesOfCitizenshipCertificate, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CopiesOfCitizenshipCertificate, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CopiesOfCitizenshipCertificate, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CopiesOfCitizenshipCertificate, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>@Html.LabelFor(model => model.BorrowerAndGuarantor, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.BorrowerAndGuarantor, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.BorrowerAndGuarantor, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.BorrowerAndGuarantor, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>@Html.LabelFor(model => model.IfTotalBorrowingofBorrower, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.IfTotalBorrowingofBorrower, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.IfTotalBorrowingofBorrower, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.IfTotalBorrowingofBorrower, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>@Html.LabelFor(model => model.AllSisterConcern, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllSisterConcern, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllSisterConcern, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllSisterConcern, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>@Html.LabelFor(model => model.ProposalDoesnotFall, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.ProposalDoesnotFall, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.ProposalDoesnotFall, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.ProposalDoesnotFall, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>@Html.LabelFor(model => model.StandardFormatOfTheCM, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.StandardFormatOfTheCM, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.StandardFormatOfTheCM, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.StandardFormatOfTheCM, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>@Html.LabelFor(model => model.CreditApprovalterm, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CreditApprovalterm, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CreditApprovalterm, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CreditApprovalterm, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>@Html.LabelFor(model => model.PriceingAreWithinTheRegulatoryGuidelines, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.PriceingAreWithinTheRegulatoryGuidelines, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.PriceingAreWithinTheRegulatoryGuidelines, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.PriceingAreWithinTheRegulatoryGuidelines, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>@Html.LabelFor(model => model.AllFeesAndCharged, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllFeesAndCharged, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllFeesAndCharged, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllFeesAndCharged, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>@Html.LabelFor(model => model.AllInternalAndExternal, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllInternalAndExternal, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllInternalAndExternal, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllInternalAndExternal, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>@Html.LabelFor(model => model.AllCopyDocuments, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllCopyDocuments, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllCopyDocuments, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllCopyDocuments, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>@Html.LabelFor(model => model.CollateralOwnerIsnotInsane, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CollateralOwnerIsnotInsane, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CollateralOwnerIsnotInsane, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.CollateralOwnerIsnotInsane, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>@Html.LabelFor(model => model.AllSecurityDocumentAsPerviouslyApproved, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllSecurityDocumentAsPerviouslyApproved, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllSecurityDocumentAsPerviouslyApproved, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.AllSecurityDocumentAsPerviouslyApproved, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>@Html.LabelFor(model => model.ThereIsNoChangeInSecurity, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.ThereIsNoChangeInSecurity, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.ThereIsNoChangeInSecurity, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.ThereIsNoChangeInSecurity, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>@Html.LabelFor(model => model.MappingCodeMentioned, htmlAttributes: new { @class = "control-label " })</td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.MappingCodeMentioned, SanimaBank.Enums.Remarks.Yes)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.MappingCodeMentioned, SanimaBank.Enums.Remarks.No)
+                            </td>
+                            <td>
+                                @Html.RadioButtonFor(x => x.MappingCodeMentioned, SanimaBank.Enums.Remarks.NA)
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Note:</td>
+                            <td colspan="4">
+                                Incase of New Credit , put a confirmation note as follows:
+                                * Security documents shall be executed completely prior to disbursement
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
