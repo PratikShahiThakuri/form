@@ -279,10 +279,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Form\Index.cshtml" />
-    <Content Include="Views\Form\PartialView\BasicDetails.cshtml" />
-    <Content Include="Views\Form\PartialView\_ReportingAsNRBDirectives.cshtml" />
-    <Content Include="Views\Form\PartialView\_Legends.cshtml" />
-    <Content Include="Views\Form\PartialView\_Proposal.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\BasicDetails.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\ReportingAsNRBDirectives.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\Legends.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\Proposal.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Collection.cshtml" />
   </ItemGroup>
   <ItemGroup>
